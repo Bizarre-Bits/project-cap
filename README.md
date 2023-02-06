@@ -1,1 +1,3 @@
-# project-cap
+# Project CAP
+
+Introducing Bizarre Bytes Studio's Project CAP (working title), the ultimate twist on a timeless classic! This visually stunning game features vibrant graphics and sound effects that bring the action to life. Players take turns placing either a cross or a pentagram on the game board, with the goal of creating a line of three symbols in a row. The fast-paced gameplay is sure to keep you on the edge of your seat, as you plan your moves and try to outwit your opponent. Whether you're a seasoned tic-tac-toe player or just looking for a fun and challenging way to pass the time, Bizarre Bytes Tic-Tac-Toe is the perfect choice. So grab a friend and get ready to play - the ultimate showdown between crosses and pentagrams is about to begin!
