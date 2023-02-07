@@ -1,13 +1,13 @@
 import pygame
 import setting
 import os
+import SingleActionSound
 
-# intro_sound = pygame.mixer.Sound(os.path.join(setting.sound_folder, "intro_s.wav"))
-setting.intro_img = pygame.image.load(os.path.join(setting.img_folder, "intro_0.png"))
 pygame.init()
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode((setting.WIDTH, setting.HEIGHT))
 
+setting.intro_img = pygame.image.load(os.path.join(setting.img_folder, "intro_0.png"))
 class Intro(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -27,11 +27,13 @@ all_sprites = pygame.sprite.Group()
 intro = Intro()
 all_sprites.add(intro)
 def introPlay():
+
+    intro_sound = SingleActionSound.SingleActionSound(os.path.join(setting.sound_folder, "intro_s.wav"))
     playingintro = True
 
     while playingintro:
         clock.tick(setting.FPS)
-        # intro_sound.play()
+        intro_sound.play()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 playingintro = False
@@ -51,4 +53,4 @@ def introPlay():
         pygame.display.flip()
 
     if playingintro == False :
-        del all_sprites.intro
+        all_sprites.remove(intro)
