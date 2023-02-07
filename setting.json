@@ -1,0 +1,7 @@
+{
+  "default": {
+    "gameResolution": [800,600],
+    "fps": 30,
+    "fullScreenMode": false,
+  }
+}
